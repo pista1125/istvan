@@ -136,7 +136,3 @@ class FlightSearch:
         data = self.search_all_flight(fly_from, fly_to, date_from, date_to, min_night, max_night, person )
         self.create_csv(data)
         self.send_mail(email, f"flight to: {fly_to}","Good luck", "flight.xlsx", True )
-
-search = FlightSearch()
-
-search.search_flight("Budapest", "Parizs", "27/11/2023", "01/03/2024", "2", "5", "1", "pista1125@gmail.com")
