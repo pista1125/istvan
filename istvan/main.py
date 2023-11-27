@@ -8,7 +8,6 @@ import requests
 import pandas
 from openpyxl.workbook import Workbook
 
-import config
 
 
 def pityu_loopyear(year):
@@ -31,15 +30,15 @@ def pityu_loopyear(year):
 
 class FlightSearch:
 
-    def __init__(self):
+    def __init__(self, apykey, email, password):
         self.headers = {
             'accept': 'application/json',
-            'apikey': config.apykey,
+            'apikey': apykey,
         }
         self.kiwi_endpoint = 'https://api.tequila.kiwi.com'
         self.search_endpoint = 'https://api.tequila.kiwi.com/v2/search'
-        self.my_email = config.my_email
-        self.password = config.my_email_password
+        self.my_email = email
+        self.password = password
 
     def add_iata_code(self, city_name):
         params = {

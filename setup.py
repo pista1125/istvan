@@ -8,7 +8,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name="istvan",
-    version="1.0",
+    version="2.0",
     author="Istvan",
     author_email="pista1125@gmail.com",
     description="A description of your package",
