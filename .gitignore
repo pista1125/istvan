@@ -1,3 +1,6 @@
 # created by virtualenv automatically
 config.py
 .idea
+dist
+build
+pityu.egg-info
